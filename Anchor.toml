@@ -1,0 +1,21 @@
+[programs.localnet]
+hto_treasury = "3LENVKyJfTQeh6U714NQKYvqEibjqZLPZYfprZsAoCUS"
+
+[programs.devnet]
+hto_treasury = "94fsNRJx5pcXxcmWXW2RR3bHbT7SAmhfdZGxm4GLwC1"
+
+[programs.testnet]
+hto_treasury = "3cjoBZpiEe49TiFcyvPVBTmR5GxiYzpGmw2HyJyszphw"
+
+[programs.mainnet]
+hto_treasury = "GfXYYi5TFPG5ixdfiXLQacgjZbatqpb9uZZPMTBxMVCx"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "mainnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "mocha -t 1000000 tests/treasuring_test.js"
