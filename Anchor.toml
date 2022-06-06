@@ -1,8 +1,8 @@
 [programs.localnet]
-hto_treasury = "3LENVKyJfTQeh6U714NQKYvqEibjqZLPZYfprZsAoCUS"
+hto_treasury = "9eF85bwDGA5CgaXgU1jCw13RZsUGY3JJ2x1MM19tJjVh"
 
 [programs.devnet]
-hto_treasury = "94fsNRJx5pcXxcmWXW2RR3bHbT7SAmhfdZGxm4GLwC1"
+hto_treasury = "AHMVst4jghKqSSMDNUWrLjfHQgwD8dod3vFL4KgkJvKZ"
 
 [programs.testnet]
 hto_treasury = "3cjoBZpiEe49TiFcyvPVBTmR5GxiYzpGmw2HyJyszphw"
@@ -14,8 +14,8 @@ hto_treasury = "GfXYYi5TFPG5ixdfiXLQacgjZbatqpb9uZZPMTBxMVCx"
 url = "https://anchor.projectserum.com"
 
 [provider]
-cluster = "mainnet"
-wallet = "~/.config/solana/id.json"
+cluster = "devnet"
+wallet = "./test-keypair.json"
 
 [scripts]
-test = "mocha -t 1000000 tests/treasuring_test.js"
+test = "mocha -t 1000000 ./treasuring_scripts/create_state.js"
